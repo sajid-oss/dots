@@ -3,29 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Service | Professional</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Premium Service Website</title>
+    <style>
+        /* CSS Styling */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background: #0f172a; color: white; display: flex; flex-direction: column; align-items: center; }
+        
+        /* Glassmorphism Navbar */
+        nav { width: 90%; padding: 20px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 15px; margin-top: 20px; display: flex; justify-content: space-between; }
+        
+        /* Hero Section */
+        .hero { text-align: center; padding: 100px 20px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; background: linear-gradient(to right, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        /* Ad Container (Adsterra Ready) */
+        .ad-section { margin: 40px 0; padding: 20px; border: 1px dashed #3b82f6; border-radius: 15px; text-align: center; min-height: 250px; width: 300px; }
+        .ad-label { color: #3b82f6; font-size: 12px; margin-bottom: 10px; display: block; }
+        
+        /* Responsive Button */
+        .btn { padding: 15px 30px; background: #3b82f6; border: none; border-radius: 8px; color: white; cursor: pointer; transition: 0.3s; }
+        .btn:hover { transform: scale(1.05); background: #2563eb; }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">BRAND NAME</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h1>Premium Digital Solutions</h1>
-            <p>Elevate your business with our top-tier web services.</p>
-            <button id="cta-btn">Get Started</button>
-        </section>
-    </main>
+    <nav>
+        <div><b>BRAND NAME</b></div>
+        <div>Home | Services | Contact</div>
+    </nav>
 
-    <script src="script.js"></script>
+    <section class="hero">
+        <h1>Digital Premium Solutions</h1>
+        <p>Expertise delivered with professional design.</p>
+        <br>
+        <button class="btn">Explore Now</button>
+    </section>
+
+    <div class="ad-section">
+        <span class="ad-label">ADVERTISEMENT</span>
+        <div id="adsterra-placeholder">
+            <p style="color: #64748b;">Your Ad Here</p>
+        </div>
+    </div>
+
 </body>
 </html>
