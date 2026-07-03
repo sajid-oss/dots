@@ -1,21 +1,8 @@
-/* Tool Grid Layout */
-.tool-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 40px;
-}
+/* Header and Body Fixed */
+header { background-color: #ff0000 !important; color: white; }
+body { background-color: #ffffff !important; color: #333; }
 
-.tool-card {
-    background: #f8fafc;
-    padding: 30px;
-    border-radius: 15px;
-    border: 1px solid #e2e8f0;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.tool-card:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    transform: translateY(-5px);
-}
+/* Grid aur Cards ki styling */
+.tool-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; padding: 40px; }
+.tool-card { background: #fff; padding: 25px; border: 1px solid #ddd; border-radius: 10px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+.main-btn { background-color: #ff0000; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; margin-top: 10px; }
