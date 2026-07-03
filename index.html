@@ -5,68 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pageup | Official</title>
     <style>
-        /* General Body Settings */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        
-        body { 
-            background-color: #ffffff; /* White Body */
-            color: #333; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-        }
+        body { background-color: #ffffff; color: #333; display: flex; flex-direction: column; align-items: center; }
         
         /* Red Header */
-        header { 
-            width: 100%; 
-            padding: 20px 5%; 
-            background-color: #ff0000; /* Red Header */
-            color: white; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
+        header { width: 100%; padding: 20px 5%; background-color: #ff0000; color: white; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .logo { font-size: 24px; font-weight: bold; letter-spacing: 2px; }
         
+        /* Link/Button Styling */
+        nav a { color: white; text-decoration: none; font-weight: bold; margin-left: 20px; transition: 0.3s; }
+        nav a:hover { text-decoration: underline; }
+
         /* Hero Section */
         .hero { text-align: center; padding: 100px 20px; }
         .hero h1 { font-size: 3rem; margin-bottom: 20px; color: #ff0000; }
 
-        /* Ad Section */
-        .ad-section { 
-            margin: 40px 0; 
-            padding: 20px; 
-            border: 2px dashed #ff0000; 
-            border-radius: 15px; 
-            text-align: center; 
-            width: 300px; 
-            background: #f9f9f9;
+        /* The Clickable Button */
+        .main-btn { 
+            display: inline-block; 
+            padding: 12px 25px; 
+            background-color: #ff0000; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold;
+            margin-top: 20px;
         }
-        
-        .ad-label { color: #ff0000; font-size: 12px; margin-bottom: 10px; display: block; }
+        .main-btn:hover { background-color: #cc0000; }
     </style>
 </head>
 <body>
 
     <header>
         <div class="logo">PAGEUP</div>
-        <nav>Home | Services | Contact</nav>
+        <nav>
+            <a href="index.html">Home</a> 
+        </nav>
     </header>
 
     <section class="hero">
         <h1>Welcome to Pageup</h1>
-        <p>Premium Digital Solutions for your business.</p>
+        <p>Your premium digital solution starts here.</p>
+        
+        <a href="index.html" class="main-btn">Go to Main Page</a>
     </section>
-
-    <!-- Adsterra Placement -->
-    <div class="ad-section">
-        <span class="ad-label">ADVERTISEMENT</span>
-        <div id="adsterra-placeholder">
-            <p style="color: #666;">Your Ad Here</p>
-        </div>
-    </div>
 
 </body>
 </html>
