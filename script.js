@@ -1,10 +1,28 @@
-// PDF Merge Logic
+// 1. Image to PDF Logic
+function convertImageToPDF() {
+    const { jsPDF } = window.jspdf;
+    const input = document.getElementById('imageInput');
+    
+    if (input.files && input.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const doc = new jsPDF();
+            doc.addImage(e.target.result, 'JPEG', 10, 10, 180, 150);
+            doc.save("Pageup-Converted.pdf");
+        };
+        reader.readAsDataURL(input.files[0]);
+    } else {
+        alert("Pehle image select karein!");
+    }
+}
+
+// 2. Merge PDF Logic
 async function mergePDFs() {
-    const { PDFDocument } = PDFLib; // Library load honi chahiye
+    const { PDFDocument } = PDFLib;
     const input = document.getElementById('pdfInput');
     
     if (input.files.length < 2) {
-        alert("Kam se kam 2 files select karein!");
+        alert("Kam se kam 2 PDF files select karein!");
         return;
     }
 
