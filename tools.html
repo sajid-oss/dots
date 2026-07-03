@@ -1,14 +1,38 @@
-<div class="tool-grid">
-    <div class="tool-card">
-        <h3>Image to PDF</h3>
-        <input type="file" id="imageInput" accept="image/*">
-        <button class="main-btn" onclick="convertImageToPDF()">Convert</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pageup | Tools</title>
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PAGEUP</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tools.html">Tools</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1 style="color: #ff0000; margin: 20px 0;">Our Digital Tools</h1>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <h3>Image to PDF</h3>
+                <input type="file" id="imageInput" accept="image/*">
+                <button class="main-btn" onclick="convertImageToPDF()">Convert Now</button>
+            </div>
+            <div class="tool-card">
+                <h3>Merge PDF</h3>
+                <input type="file" id="pdfInput" multiple accept=".pdf">
+                <button class="main-btn" onclick="mergePDFs()">Merge Now</button>
+            </div>
+        </div>
     </div>
 
-    <div class="tool-card">
-        <h3>Merge PDF</h3>
-        <p>Combine multiple PDF files.</p>
-        <input type="file" id="pdfInput" multiple accept=".pdf">
-        <button class="main-btn" onclick="mergePDFs()">Merge Now</button>
-    </div>
-</div>
+    <script src="script.js"></script>
+</body>
+</html>
