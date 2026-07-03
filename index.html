@@ -3,46 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Service Website</title>
+    <title>Pageup | Official</title>
     <style>
-        /* CSS Styling */
+        /* General Body Settings */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { background: #0f172a; color: white; display: flex; flex-direction: column; align-items: center; }
         
-        /* Glassmorphism Navbar */
-        nav { width: 90%; padding: 20px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 15px; margin-top: 20px; display: flex; justify-content: space-between; }
+        body { 
+            background-color: #ffffff; /* White Body */
+            color: #333; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        
+        /* Red Header */
+        header { 
+            width: 100%; 
+            padding: 20px 5%; 
+            background-color: #ff0000; /* Red Header */
+            color: white; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .logo { font-size: 24px; font-weight: bold; letter-spacing: 2px; }
         
         /* Hero Section */
         .hero { text-align: center; padding: 100px 20px; }
-        .hero h1 { font-size: 3rem; margin-bottom: 20px; background: linear-gradient(to right, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; color: #ff0000; }
 
-        /* Ad Container (Adsterra Ready) */
-        .ad-section { margin: 40px 0; padding: 20px; border: 1px dashed #3b82f6; border-radius: 15px; text-align: center; min-height: 250px; width: 300px; }
-        .ad-label { color: #3b82f6; font-size: 12px; margin-bottom: 10px; display: block; }
+        /* Ad Section */
+        .ad-section { 
+            margin: 40px 0; 
+            padding: 20px; 
+            border: 2px dashed #ff0000; 
+            border-radius: 15px; 
+            text-align: center; 
+            width: 300px; 
+            background: #f9f9f9;
+        }
         
-        /* Responsive Button */
-        .btn { padding: 15px 30px; background: #3b82f6; border: none; border-radius: 8px; color: white; cursor: pointer; transition: 0.3s; }
-        .btn:hover { transform: scale(1.05); background: #2563eb; }
+        .ad-label { color: #ff0000; font-size: 12px; margin-bottom: 10px; display: block; }
     </style>
 </head>
 <body>
 
-    <nav>
-        <div><b>BRAND NAME</b></div>
-        <div>Home | Services | Contact</div>
-    </nav>
+    <header>
+        <div class="logo">PAGEUP</div>
+        <nav>Home | Services | Contact</nav>
+    </header>
 
     <section class="hero">
-        <h1>Digital Premium Solutions</h1>
-        <p>Expertise delivered with professional design.</p>
-        <br>
-        <button class="btn">Explore Now</button>
+        <h1>Welcome to Pageup</h1>
+        <p>Premium Digital Solutions for your business.</p>
     </section>
 
+    <!-- Adsterra Placement -->
     <div class="ad-section">
         <span class="ad-label">ADVERTISEMENT</span>
         <div id="adsterra-placeholder">
-            <p style="color: #64748b;">Your Ad Here</p>
+            <p style="color: #666;">Your Ad Here</p>
         </div>
     </div>
 
